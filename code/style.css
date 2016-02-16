@@ -16,29 +16,43 @@ body {
 }
 
 #login {
+	position: relative;
 	margin: auto;
 	margin-top: 4%;
 	margin-bottom: 4%;
 	padding: 1%;
-	height: 20%;
+	height: 25%;
 	width: 60%;
 	background-color: rgb(100,100,100);
 	background-color: rgba(50,50,50,0.5);
 }
 
 #loginUsername, #loginPassword {
-	height: 30%;
 	width: 60%;
 }
 
 #loginUsername {
-	margin-top: 1%;
-	position: relative;
-	float: top;
+	position: absolute;
+	left: 3%;
+	top: 15%;
+	bottom: 60%;
 }
 
 #loginPassword {
-	margin-bottom: 1%;
-	position: relative;
-	float: bottom;
+	position: absolute;
+	left: 3%;
+	bottom: 15%;
+	top: 60%;
+}
+
+#loginButton {
+	position: absolute;
+	top: 20%;
+	bottom: 20%;
+	right: 5%;
+	left: 68%;
+	border-radius: 10px;
+	-moz-border-radius: 15px 15px 15px 15px;
+	-webkit-border-radius: 15px 15px 15px 15px;
+	border: 2px dashed #000000;
 }
