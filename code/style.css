@@ -16,13 +16,30 @@ body {
 }
 
 #login {
+	vertical-align:top;
+	display: inline-block;
 	position: relative;
-	margin: auto;
+	margin: 5%;
+	margin-right: 3%;
 	margin-top: 4%;
 	margin-bottom: 4%;
 	padding: 1%;
 	height: 25%;
-	width: 60%;
+	width: 55%;
+	background-color: rgb(100,100,100);
+	background-color: rgba(50,50,50,0.5);
+}
+
+#signUp {
+	vertical-align:top;
+	display: inline-block;
+	position: relative;
+	width: 28%;
+	height: 25%;
+	margin: 5%;
+	margin-left: 3%;
+	margin-top: 4%;
+	margin-bottom: 4%;
 	background-color: rgb(100,100,100);
 	background-color: rgba(50,50,50,0.5);
 }
@@ -47,12 +64,24 @@ body {
 
 #loginButton {
 	position: absolute;
-	top: 20%;
-	bottom: 20%;
+	top: 16%;
+	bottom: 50%;
 	right: 5%;
 	left: 68%;
 	border-radius: 10px;
 	-moz-border-radius: 15px 15px 15px 15px;
 	-webkit-border-radius: 15px 15px 15px 15px;
 	border: 2px dashed #000000;
+}
+
+#googleLogin {
+	position: absolute;
+	top: 62%;
+	bottom: 16%;
+	right: 5%;
+	left: 68%;
+	
+	text-align: center;
+	background-color: aqua;
+	border-radius: 5px;
 }
