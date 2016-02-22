@@ -1,121 +1,39 @@
-html, body {
-	width: 100%;
-	height: 100%;
-}
-
-body {
-	background-color: rgb(200, 200, 200);
-	margin: 0px;
-	padding: 0px;
-	font-family: Oxygen;
-}
-
-#navMenu {
-	margin-bottom: 1%;
-	background-color: white;
-	height: 15%;
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
 	
-	background: rgb(118,197,213); /* Old browsers */
-	background: -moz-linear-gradient(-45deg,  rgba(118,197,213,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
-	background: -webkit-linear-gradient(-45deg,  rgba(118,197,213,1) 0%,rgba(255,255,255,1) 100%); /* Chrome10-25,Safari5.1-6 */
-	background: linear-gradient(135deg,  rgba(118,197,213,1) 0%,rgba(255,255,255,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#76c5d5', endColorstr='#ffffff',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
-
-	-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.6);
-	-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.6);
-	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.6);
-}
-/*
-Switch to pixels
-Fix footer
-*/
-#login {
-	vertical-align:top;
-	position: relative;
-	display: inline-block;
-	margin: 100px;
-	margin-right: 40px;
-	margin-top: 4%;
-	margin-bottom: 4%;
-	padding: 1%;
-	height: 250px;
-	width: 950px;
-	background-color: rgb(100,100,100);
-	background-color: rgba(50,50,50,0.5);
-}
-
-#signUp {
-	vertical-align:top;
-	position: relative;
-	display: inline-block;
-	width: 28%;
-	height: 200px;
-	margin: 6%;
-	margin-left: 2%;
-	margin-top: 4%;
-	margin-bottom: 4%;
-	padding: 1%;
-	background-color: rgb(100,100,100);
-	background-color: rgba(50,50,50,0.5);
-}
-
-#loginUsername, #loginPassword {
-	width: 600px;
-	height: 50px;
-	position: absolute;
-}
-
-#loginUsername {
-	top: 60px;
-	left: 60px;
-}
-
-#loginPassword {
-	bottom: 60px;
-	left: 60px;
-}
-
-#loginButton {
-	position: absolute;
-	top: 65px;
-	right: 60px;
+	<!--
+	Links
+	-->
+    <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
+    <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+	<link rel='stylesheet' type='text/css' href='style.css'>
 	
-	width: 220px;
-	height: 70px;
+	<!--
+	JQuery Code
+	-->
+	<script>
+		
+	</script>
+</head>
+<body>
+	<div id="navMenu">
+	</div>
 	
-	background-color: rgb(140,140,140);
-	border-radius: 5px;
-	-moz-border-radius: 5px;
-	-webkit-border-radius: 5px;
-	border: 1px solid rgb(200,200,200);
-}
-
-#googleLogin {
-	position: absolute;
-	bottom: 65px;
-	right: 60px;
+	<div id="inline">
+		<div id="login">
+			<input type="text" id="loginUsername" placeholder="Username">
+			<input type="password" id="loginPassword" placeholder="Password">
+			<div id="loginButton"></div>
+			<div id="googleLogin"></div>
+		</div><div id="signUp">
+			s
+		</div>
+	</div>
 	
-	width: 220px;
-	height: 53px;
-	
-	text-align: center;
-	background: url('google/light_normal_web.png') 0px/100% 100% no-repeat;
-	border-radius: 5px;
-}
-
-footer {
-	position: absolute;
-	
-	border-top: 3px dashed rgb(120,120,120);
-	background-color: rgb(250,250,255);
-	
-	width: 100%;
-	height: 10%;
-	bottom: 0%;
-	padding-top: 1%;
-	padding-bottom: 0.25%;
-	
-	font: 18px/25px Oxygen ;
-	text-align: center;
-	color: rgb(140,140,140);
-}
+	<footer>
+		PakTutor™ Alpha v0.01
+		<br>
+		Copyright © 2016 Hussein Aljanaby
+	</footer>
+</body>
