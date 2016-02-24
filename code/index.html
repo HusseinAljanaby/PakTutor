@@ -13,9 +13,6 @@
 	JQuery Code
 	-->
 	<script src="js/firebase.js"></script>
-	<script>
-		
-	</script>
 </head>
 <body>
 	<div id="navMenu">
@@ -23,13 +20,21 @@
 	
 	<div id="inline">
 		<div id="login">
-			<input type="text" id="loginUsername" placeholder="Username">
+			<input type="text" id="loginUsername" placeholder="Email">
 			<input type="password" id="loginPassword" placeholder="Password">
 			<div id="loginButton"><span>Login</span></div>
 			<div id="googleLogin"></div>
 		</div><div id="signUp">
-			s
+			<input type="text" class="signUpInput" placeholder="Email">
+			<input type="password" class="signUpInput" placeholder="Password">
+			<input type="password" class="signUpInput" placeholder="Repeat Password">
 		</div>
+	</div>
+	
+	<div class="fullscreen-bg">
+		<video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+			<source src="background.mp4" type="video/webm">
+		</video>
 	</div>
 	
 	<footer>
