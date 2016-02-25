@@ -4,8 +4,8 @@ function loginGoogle() {
 	ref.authWithOAuthRedirect("google", function(error) {
 	if (error) {
 		console.log("Authentication Failed!", error);
-	} else {
+	}, else {
 		// We'll never get here, as the page will redirect on success.
 		}
-	}
+	});
 }
