@@ -13,7 +13,13 @@
 </head>
 <body>
 	<div id="navMenu">
+	<span style="position: absolute; top: 6%;"></span>
 	</div>
+	<script>
+	if (ref.getAuth() != null) {
+		$("#navMenu span").append("Hi, " + ref.getAuth().google.displayName);
+	}
+	</script>
 	
 	<div id="inline">
 		<div id="login">
@@ -44,11 +50,13 @@
 		</div>
 	</div>
 	
+	<!-- Video
 	<div class="fullscreen-bg">
 		<video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
 			<source src="background.mp4" type="video/webm">
 		</video>
 	</div>
+	-->
 	
 	<footer>
 		PakTutor™ Alpha v0.01
