@@ -1,7 +1,11 @@
 var ref = new Firebase("https://paktutor.firebaseio.com");
+var auth = ref.getAuth();
+var user;
 
-// Redirecting
-
+// Logged in
+if(ref.getAuth() != null) {
+	user = new Firebase("https://paktutor.firebaseio.com/users/" + auth.uid);
+}
 //
 
 function loginGoogle() {
