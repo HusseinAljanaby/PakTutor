@@ -15,11 +15,6 @@
 	<div id="navMenu">
 	<span style="position: absolute; top: 6%;"></span>
 	</div>
-	<script>
-	if (ref.getAuth() != null) {
-		$("#navMenu span").append("Hi, " + ref.getAuth().google.displayName);
-	}
-	</script>
 	
 	<div id="inline">
 		<div id="login">
@@ -27,22 +22,6 @@
 			<input type="password" id="loginPassword" placeholder="Password">
 			<div id="loginButton"><span>Login</span></div>
 			<img id="googleLogin" src="google/google_light_normal.png">
-			<script>
-				var src = $("#googleLogin").attr("src");
-				
-				$("#googleLogin").hover( function() {
-					$(this).attr("src", "google/google_light_focus.png");
-					$("#googleLogin").mousedown(function() {
-						$(this).attr("src", "google/google_light_pressed.png");
-					});
-					$("#googleLogin").mouseup(function() {
-						$(this).attr("src", "google/google_light_focus.png");
-						loginGoogle();
-					});
-				}, function() {
-					$(this).attr("src", src);
-				});
-			</script>
 		</div><div id="signUp">
 			<input type="text" class="signUpInput" placeholder="Email">
 			<input type="password" class="signUpInput" placeholder="Password">
