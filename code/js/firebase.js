@@ -1,9 +1,9 @@
 var ref = new Firebase("https://paktutor.firebaseio.com");
 
-ref.authWithOAuthRedirect("google", function(error) {
+ref.authWithOAuthPopup("google", function(error, authData) {
   if (error) {
-    console.log("Authentication Failed!", error);
+    console.log("Login Failed!", error);
   } else {
-    // We'll never get here, as the page will redirect on success.
+    console.log("Authenticated successfully with payload:", authData);
   }
 });
