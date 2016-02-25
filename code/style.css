@@ -47,7 +47,7 @@ body {
 	height: 250px;
 	width: 850px;
 	background-color: rgb(100,100,100);
-	background-color: rgba(50,50,50,0.75);
+	background-color: rgba(50,50,50,0.65);
 }
 
 #signUp {
@@ -59,7 +59,7 @@ body {
 	margin: 5% 50px;
 	padding: 12px;
 	background-color: rgb(100,100,100);
-	background-color: rgba(50,50,50,0.75);
+	background-color: rgba(50,50,50,0.65);
 }
 
 #loginUsername, #loginPassword {
@@ -105,6 +105,10 @@ body {
 	cursor: pointer;
 	cursor: hand;
 	background-color: rgb(150,150,150);
+	
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 }
 
 #loginButton :active{
@@ -112,11 +116,19 @@ body {
 	-webkit-box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.75);
 	-moz-box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.75);
 	box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.75);
+
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
 }
 
 #loginButton span {
 	display: table-cell; 
 	vertical-align: middle;
+}
+
+#loginContainer {
+	position: relative;
 }
 
 #googleLogin {
@@ -127,9 +139,17 @@ body {
 	width: 220px;
 	height: 53px;
 	
-	text-align: center;
 	background: url('google/light_normal_web.png') 0px/100% 100% no-repeat;
-	border-radius: 5px;
+}
+
+#googleLogin :hover {
+	background: url('google/light_focus_web.png') 0px/100% 100% no-repeat;
+	cursor: pointer;
+	cursor: hand;
+}
+
+#googleLogin :active {
+	background: url('google/light_pressed_web.png') 0px/100% 100% no-repeat;
 }
 
 .signUpInput {
