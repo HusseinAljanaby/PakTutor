@@ -83,7 +83,7 @@ body {
 
 #loginButton {
 	position: absolute;
-	top: 60px;
+	top: 66px;
 	right: 60px;
 	
 	width: 220px;
@@ -127,29 +127,12 @@ body {
 	vertical-align: middle;
 }
 
-#loginContainer {
-	position: relative;
-}
-
 #googleLogin {
 	position: absolute;
-	bottom: 60px;
+	bottom: 66px;
 	right: 60px;
 	
-	width: 220px;
-	height: 53px;
-	
-	background: url('google/light_normal_web.png') 0px/100% 100% no-repeat;
-}
-
-#googleLogin :hover {
-	background: url('google/light_focus_web.png') 0px/100% 100% no-repeat;
-	cursor: pointer;
-	cursor: hand;
-}
-
-#googleLogin :active {
-	background: url('google/light_pressed_web.png') 0px/100% 100% no-repeat;
+	width: 225px;
 }
 
 .signUpInput {
@@ -162,7 +145,7 @@ body {
 }
 
 
-/*Video Start*/
+/*Video*/
 .fullscreen-bg {
     position: fixed;
     top: 0;
@@ -179,10 +162,9 @@ body {
     left: 0;
     width: 100%;
 }
-/*Video End*/
+/*Video*/
 
 footer {
-	border-top: 2px dashed rgb(120,120,120);
 	background-color: rgb(255,255,255);
 	
 	margin-top: 1%;
