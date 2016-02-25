@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 var ref = new Firebase("https://paktutor.firebaseio.com");
 
 function loginGoogle() {
@@ -8,17 +7,5 @@ function loginGoogle() {
 	} else {
 		// We'll never get here, as the page will redirect on success.
 		}
-	});
-=======
-var ref = new Firebase("https://paktutor.firebaseio.com");
-
-function loginGoogle() {
-	ref.authWithOAuthRedirect("google", function(error) {
-	if (error) {
-		console.log("Authentication Failed!", error);
-	} else {
-		// We'll never get here, as the page will redirect on success.
-		}
-	});
->>>>>>> origin/master
+	}
 }
