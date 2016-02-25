@@ -18,3 +18,25 @@ function loginGoogle() {
 		remember: "sessionOnly"
 	});
 }
+
+$(document).ready(function() {
+	if (ref.getAuth() != null) {
+		$("#navMenu span").append("Hi, " + ref.getAuth().google.displayName);
+	}
+	
+	var src = $("#googleLogin").attr("src");
+				
+	$("#googleLogin").hover( function() {
+		$(this).attr("src", "google/google_light_focus.png");
+		
+		$("#googleLogin").mousedown(function() {
+			$(this).attr("src", "google/google_light_pressed.png");
+		});
+		$("#googleLogin").mouseup(function() {
+			$(this).attr("src", "google/google_light_focus.png");
+			loginGoogle();
+		});
+		}, function() {
+			$(this).attr("src", src);
+	});
+});
