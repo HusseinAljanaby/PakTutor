@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 html, body {
 	width: 100%;
 	height: 100%;
@@ -177,3 +178,184 @@ footer {
 	text-align: center;
 	color: rgb(140,140,140);
 }
+=======
+html, body {
+	width: 100%;
+	height: 100%;
+}
+
+@font-face {
+    font-family: Oxygen;
+    src: url('fonts/Oxygen/Oxygen-Regular.ttf');
+}
+
+body {
+	background-color: rgb(200, 200, 200);
+	margin: 0px;
+	padding: 0px;
+	font-family: Oxygen;
+}
+
+#navMenu {
+	margin-bottom: 1%;
+	background-color: white;
+	height: 15%;
+	
+	background: rgba(50,157,190,1);/* Old Browsers */
+	background: -moz-linear-gradient(left, rgba(50,157,190,1) 0%, rgba(255,255,255,1) 100%); /* FF3.6+ */
+	background: -webkit-gradient(left top, right top, color-stop(0%, rgba(50,157,190,1)), color-stop(100%, rgba(255,255,255,1)));/* Chrome, Safari4+ */
+	background: -webkit-linear-gradient(left, rgba(50,157,190,1) 0%, rgba(255,255,255,1) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(left, rgba(50,157,190,1) 0%, rgba(255,255,255,1) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(left, rgba(50,157,190,1) 0%, rgba(255,255,255,1) 100%); /* IE 10+ */
+	background: linear-gradient(to right, rgba(50,157,190,1) 0%, rgba(255,255,255,1) 100%);/* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#329dbe', endColorstr='#ffffff', GradientType=1 );/* IE6-9 */
+
+	-webkit-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.6);
+	-moz-box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.6);
+	box-shadow: 0px 2px 5px 0px rgba(0,0,0,0.6);
+}
+
+#inline {
+	text-align: center;
+}
+
+#login {
+	vertical-align:top;
+	position: relative;
+	display: inline-block;
+	margin: 5% 50px;
+	padding: 12px;
+	height: 250px;
+	width: 850px;
+	background-color: rgb(100,100,100);
+	background-color: rgba(50,50,50,0.65);
+}
+
+#signUp {
+	vertical-align:top;
+	position: relative;
+	display: inline-block;
+	width: 500px;
+	height: 550px;
+	margin: 5% 50px;
+	padding: 12px;
+	background-color: rgb(100,100,100);
+	background-color: rgba(50,50,50,0.65);
+}
+
+#loginUsername, #loginPassword {
+	font: 18px Oxygen;
+	text-align: center;
+	
+	width: 460px;
+	height: 45px;
+	position: absolute;
+}
+
+#loginUsername {
+	top: 60px;
+	left: 60px;
+}
+
+#loginPassword {
+	bottom: 60px;
+	left: 60px;
+}
+
+#loginButton {
+	position: absolute;
+	top: 66px;
+	right: 60px;
+	
+	width: 220px;
+	height: 70px;
+	
+	display: table;
+	
+	font-size: 25px;
+	color: rgb(50,50,50);
+	
+	background-color: rgb(140,140,140);
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	border: 1px solid rgb(200,200,200);
+}
+
+#loginButton :hover{
+	cursor: pointer;
+	cursor: hand;
+	background-color: rgb(150,150,150);
+	
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+#loginButton :active{
+	background-color: rgb(130,130,130);
+	-webkit-box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.75);
+	-moz-box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.75);
+	box-shadow: inset 0px 0px 2px 0px rgba(0,0,0,0.75);
+
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+#loginButton span {
+	display: table-cell; 
+	vertical-align: middle;
+}
+
+#googleLogin {
+	position: absolute;
+	bottom: 66px;
+	right: 60px;
+	
+	width: 225px;
+}
+
+.signUpInput {
+	width: 80%;
+	height: 45px;
+	margin: 15px auto;
+	
+	font: 18px Oxygen;
+	text-align: center;
+}
+
+
+/*Video*/
+.fullscreen-bg {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -100;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+/*Video*/
+
+footer {
+	background-color: rgb(255,255,255);
+	
+	margin-top: 1%;
+	width: 100%;
+	height: 10%;
+	padding-top: 1%;
+	padding-bottom: 0.25%;
+	
+	font: 18px/25px Oxygen;
+	text-align: center;
+	color: rgb(140,140,140);
+}
+>>>>>>> origin/master
