@@ -5,7 +5,7 @@ var user;
 // Logged in
 if(ref.getAuth() != null) {
 	user = new Firebase("https://paktutor.firebaseio.com/users/" + auth.uid);
-	user.push();
+	user.set({"name": auth.google.displayName});
 }
 //
 
