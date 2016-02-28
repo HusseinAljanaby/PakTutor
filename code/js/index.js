@@ -1,13 +1,5 @@
 var ref = new Firebase("https://paktutor.firebaseio.com");
-var auth = ref.getAuth();
 var user;
-
-// Logged in
-if(ref.getAuth() != null) {
-	user = new Firebase("https://paktutor.firebaseio.com/users/" + auth.uid);
-	user.set({"name": auth.google.displayName});
-}
-//
 
 function loginGoogle() {
 	ref.authWithOAuthRedirect("google", function(error) {
@@ -19,14 +11,24 @@ function loginGoogle() {
 	});
 }
 
-$(document).ready(function() {
-	if (ref.getAuth() != null) {
-		$("#navMenu span").append("Hi, " + ref.getAuth().google.displayName);
+// Logged in
+ref.onAuth(function(authData) {
+	if(authData)
+	{
+		user = new Firebase("https://paktutor.firebaseio.com/users/" + authData.uid);
+		user.update({"name": authData.google.displayName});
+		$("#navMenu span").append("Hi, " + authData.google.displayName);
+		setTimeout(function() {
+			window.location = "home.html";
+		}, 2000);
 	}
-	
+});
+//
+
+$(document).ready(function() {
 	var src = $("#googleLogin").attr("src");
 				
-	$("#googleLogin").hover( function() {
+	$("#googleLogin").hover(function() {
 		$(this).attr("src", "google/google_light_focus.png");
 		
 		$("#googleLogin").mousedown(function() {
