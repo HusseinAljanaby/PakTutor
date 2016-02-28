@@ -8,4 +8,3 @@ $(document).ready(function() {
 	} else {
 		window.location = "index.html"
 	}
-});
