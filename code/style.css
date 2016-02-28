@@ -205,6 +205,8 @@ footer {
 	
 	margin: 0px auto;
 	padding: 12px;
+	padding-left: 0px;
+	padding-right: 0px;
 	
 	background-color: rgb(100,100,100);
 	background-color: rgba(50,50,50,0.65);
@@ -216,9 +218,68 @@ footer {
 	border-right: 2px dashed rgb(150,150,150);
 }
 
-#left #profileImage {
-	width: 180px;
-	height: 180px;
+#left #piContainer {
+	position: relative;
+	margin: 12px auto;
+	width: 256px;
+	height: 256px;
+	
+	border: 1px solid black;
+	
+	overflow: hidden;
+}
+
+#left #piContainer #profileImage {
+}
+
+#left #piContainer #changeImage {
+	position: absolute; 
+	display: inline-block;
+	
+	height: 50px;
+	width: 100%;
+	
+	left: 0;
+	bottom: 0;
+	
+	color: rgb(50,50,50);
+	font-size: 20px;
+	font-weight: bold;
+	line-height: 50px;
+	
+	background-color: rgb(40,147,180);
+	background-color: rgba(40,147,180,0.65);
+
+	-webkit-touch-callout: none; /* iOS Safari */
+	-webkit-user-select: none;   /* Chrome/Safari/Opera */
+	-khtml-user-select: none;    /* Konqueror */
+	-moz-user-select: none;      /* Firefox */
+	-ms-user-select: none;       /* IE/Edge */
+	
+	-webkit-transition: background-color 2s; /* Safari */
+	transition: background-color 2s;
+	
+	cursor: pointer;
+	cursor: hand;
+}
+
+#left #stats {
+	background-color: rgb(150,150,150);
+	width: 80%;
+	height: 20%;
+	
+	margin: 20px auto;
+}
+
+.profileInput {
+	font: 15px Oxygen;
+}
+
+#left .profileInput {
+	height: 5%;
+	width: 80%;
+	
+	margin: 16px auto;
 }
 
 #profile #info #right {
