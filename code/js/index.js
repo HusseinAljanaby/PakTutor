@@ -16,10 +16,10 @@ ref.onAuth(function(authData) {
 	if(authData)
 	{
 		user = new Firebase("https://paktutor.firebaseio.com/users/" + authData.uid);
-		user.set({"name": authData.google.displayName});
+		user.update({"name": authData.google.displayName});
 		$("#navMenu span").append("Hi, " + authData.google.displayName);
 		setTimeout(function() {
-			window.location = "test.html";
+			window.location = "home.html";
 		}, 2000);
 	}
 });
