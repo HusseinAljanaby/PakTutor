@@ -221,7 +221,7 @@ footer {
 
 #left #piContainer {
 	position: relative;
-	margin: 12px auto;
+	margin: 16px auto;
 	width: 256px;
 	height: 256px;
 	
@@ -272,7 +272,7 @@ footer {
 	height: 198px;
 	width: 80%;
 	
-	margin: 12px auto;
+	margin: 8px auto;
 
 	text-align: left;
 }
@@ -282,7 +282,7 @@ footer {
 	width: 80%;
 	height: 198px;
 	
-	margin: 12px auto;
+	margin: 16px auto;
 }
 
 #profile #info #right {
