@@ -281,6 +281,14 @@ footer {
 	width: 80%;
 	
 	margin: 16px auto;
+	
+	text-align: center;
+}
+
+#left #bio {
+	height: 10%;
+
+	text-align: left;
 }
 
 #profile #info #right {
