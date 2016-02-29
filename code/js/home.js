@@ -1,5 +1,7 @@
-var ref = new Firebase("https://paktutor.firebaseio.com");
+﻿var ref = new Firebase("https://paktutor.firebaseio.com");
 var user;
+
+var pImage;
 
 function changeImage() {
 	$("#changeImage").click(function() {
@@ -109,7 +111,6 @@ $(document).ready(function() {
 	}
 	changeImage();
 	
-	var pImage;
 	user.once("value", function(snap) {
 		pImage = snap.val()["image"]
 	});
