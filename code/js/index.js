@@ -1,4 +1,4 @@
-var ref = new Firebase("https://paktutor.firebaseio.com");
+﻿var ref = new Firebase("https://paktutor.firebaseio.com");
 var user;
 
 function loginGoogle() {

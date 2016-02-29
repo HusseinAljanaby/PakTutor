@@ -115,6 +115,10 @@ $(document).ready(function() {
 		pImage = snap.val()["image"]
 	});
 	if(pImage != "" && pImage != null) {
-		$("#profileImage").attr("src", "pImage");
+		$("#profileImage").attr("src", pImage);
+		$("#profileImage").css({
+			"margin-left": (- this.width()/4).toString(),
+			"margin-top": (- this.height()/4).toString()
+		});
 	}
 });
