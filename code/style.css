@@ -277,16 +277,10 @@ footer {
 }
 
 #left .profileInput {
-	height: 5%;
+	height: 22%;
 	width: 80%;
 	
 	margin: 16px auto;
-	
-	text-align: center;
-}
-
-#left #bio {
-	height: 15%;
 
 	text-align: left;
 }
