@@ -101,8 +101,19 @@ $(document).ready(function() {
 	if (ref.getAuth() != null) {
 		user = new Firebase("https://paktutor.firebaseio.com/users/" + ref.getAuth().uid);
 		user.update({"image": "", "bio": "", "lessons": ""});
+		if(ref.getAuth().provider == "google") {
+			user.update({"image": ref.getAuth().google.profileImageURL});
+		}
 	} else {
 		window.location = "index.html";
 	}
 	changeImage();
+	
+	var pImage;
+	user.once("value", function(snap) {
+		pImage = snap.val()["image"]
+	});
+	if(pImage != "" && pImage != null) {
+		$("#profileImage").attr("src", "pImage");
+	}
 });
