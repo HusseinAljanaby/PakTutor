@@ -1,4 +1,4 @@
-﻿var ref = new Firebase("https://paktutor.firebaseio.com");
+var ref = new Firebase("https://paktutor.firebaseio.com");
 var user;
 
 var pImage;
@@ -112,13 +112,19 @@ $(document).ready(function() {
 	changeImage();
 	
 	user.once("value", function(snap) {
-		pImage = snap.val()["image"]
+		pImage = snap.val()["image"];
+		
+		if (pImage != "" && pImage != null) {
+			var shorterSide = $("#profileImage").width() > $("#profileImage").height() ? $("#profileImage").height(256) : $("#profileImage").width(256); 
+			
+			var extraWidth = $("#profileImage").width() > $("#piContainer").width();
+			var extraHeight = $("#profileImage").height() > $("#piContainer").height();
+			
+			$("#profileImage").attr("src", pImage);
+			$("#profileImage").css({
+				"margin-left": extraWidth ? (-($("#profileImage").width() - $("#piContainer").width())/2).toString() + "px" : 0,
+				"margin-top": extraHeight ? (-($("#profileImage").height() - $("#piContainer").height())/2).toString() + "px" : 0,
+			});
+		}
 	});
-	if(pImage != "" && pImage != null) {
-		$("#profileImage").attr("src", pImage);
-		$("#profileImage").css({
-			"margin-left": (- this.width()/4).toString() + "px",
-			"margin-top": (- this.height()/4).toString() + "px"
-		});
-	}
 });

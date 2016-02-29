@@ -215,6 +215,7 @@ footer {
 #profile #info #left {
 	height: 100%;
 	width: 35%;
+	margin-top: -12px;
 	border-right: 2px dashed rgb(150,150,150);
 }
 
@@ -266,9 +267,9 @@ footer {
 #left #stats {
 	background-color: rgb(150,150,150);
 	width: 80%;
-	height: 20%;
+	height: 27%;
 	
-	margin: 20px auto;
+	margin: 25px auto;
 }
 
 .profileInput {
@@ -283,4 +284,5 @@ footer {
 }
 
 #profile #info #right {
+	margin-top: -12px;
 }
