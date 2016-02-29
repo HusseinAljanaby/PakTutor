@@ -264,25 +264,25 @@ footer {
 	cursor: hand;
 }
 
-#left #stats {
-	background-color: rgb(150,150,150);
-	width: 80%;
-	height: 27%;
-	
-	margin: 25px auto;
-}
-
 .profileInput {
 	font: 15px Oxygen;
 }
 
 #left .profileInput {
-	height: 26%;
+	height: 198px;
 	width: 80%;
 	
-	margin: 16px auto;
+	margin: 12px auto;
 
 	text-align: left;
+}
+
+#left #stats {
+	background-color: rgb(150,150,150);
+	width: 80%;
+	height: 198px;
+	
+	margin: 12px auto;
 }
 
 #profile #info #right {
