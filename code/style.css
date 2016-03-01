@@ -215,15 +215,15 @@ footer {
 #profile #info #left {
 	height: 100%;
 	width: 35%;
-	margin-top: -12px;
+	margin-top: -16px;
 	border-right: 2px dashed rgb(150,150,150);
 }
 
 #left #piContainer {
 	position: relative;
 	margin: 16px auto;
-	width: 256px;
-	height: 256px;
+	width: 254px;
+	height: 254px;
 	
 	border: 1px solid black;
 	
@@ -269,7 +269,7 @@ footer {
 }
 
 #left .profileInput {
-	height: 198px;
+	height: 188px;
 	width: 80%;
 	
 	margin: 8px auto;
@@ -286,5 +286,5 @@ footer {
 }
 
 #profile #info #right {
-	margin-top: -12px;
+	margin-top: -16px;
 }
