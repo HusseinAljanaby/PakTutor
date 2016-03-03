@@ -12,7 +12,11 @@ function changeImage() {
 					<img id='toUpload'src=''>\
 				</div>\
 				<div id='bottom'>\
-					<input type='text' placeholder='Path'>\
+					<form action='' method='post' enctype='multipart/form-data'>\
+						<input type='file' name='fileToUpload' id='fileToUpload' style='visibility: hidden;'>\
+						<input type='submit' value='Upload Image' id='submitFile' name='submit' style='visibility: hidden;'>\
+					</form>\
+					<input id='path' type='text' placeholder='Click here to select file'>\
 					<div id='uploadButton'>\
 						Upload\
 					</div>\
@@ -88,13 +92,25 @@ function changeImage() {
 			
 			"background-color": "rgb(40,147,180)",
 		});
-	
+		$("form").attr("action", "image_upload" + "?uid=" + ref.getAuth().uid.replace(":", "-"));
 		$("#obstruction").click(function() {
 			$("#obstruction").remove();
 		});
 		
 		$("#imageChanger").click(function(e) {
 			e.stopPropagation();
+		});
+		
+		$("#path").click(function() {
+			$("#fileToUpload").click();
+		});
+		
+		$("#fileToUpload").change(function () {
+			$("#path").attr("value", $(this).val().split("/").pop().split("\\").pop());
+		});
+		
+		$("#uploadButton").click(function() {
+			$("#submitFile").click();
 		});
 	});
 }
@@ -107,7 +123,7 @@ $(document).ready(function() {
 			user.update({"image": ref.getAuth().google.profileImageURL});
 		}
 	} else {
-		window.location = "index.html";
+		window.location = "index";
 	}
 	changeImage();
 	

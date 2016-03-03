@@ -19,7 +19,7 @@ ref.onAuth(function(authData) {
 		user.update({"name": authData.google.displayName});
 		$("#navMenu span").append("Hi, " + authData.google.displayName);
 		setTimeout(function() {
-			window.location = "home.html";
+			window.location = "home";
 		}, 2000);
 	}
 });
